@@ -95,7 +95,7 @@ async function selesaikanPenggunaan(id, dataPenggunaan) {
             const kondisiKembali = dataPenggunaan.kondisiPengembalian.toUpperCase();
             const histori = {
                 namaBarang: barang.namaBarang,
-                pengguna: barang.penggunaSaatIni,
+                pengguna: barang.penggunaSaatIni.namaKaryawan,
                 tanggalMulaiPenggunaan: pengguna.tanggalMulaiPenggunaan,
                 tanggalSelesaiPenggunaan: currentTime,
                 kondisiAwal: barang.kondisi,
